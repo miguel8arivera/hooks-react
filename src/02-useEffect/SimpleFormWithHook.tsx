@@ -2,7 +2,14 @@ import Message from './Message';
 import useForm from '../hooks/useForm';
 
 function SimpleFormWithHook() {
-  const { handleInputChange, handleSubmit, name, email, password } = useForm({
+  const {
+    handleInputChange,
+    handleSubmit,
+    onResetForm,
+    name,
+    email,
+    password,
+  } = useForm({
     name: '',
     email: '',
     password: '',
@@ -49,8 +56,12 @@ function SimpleFormWithHook() {
             onChange={handleInputChange}
             placeholder="password is here ..."
           />
-
-          <button className="btn btn-primary mt-2 ">Send</button>
+          <div className="d-flex gap-5">
+            <button className="btn btn-primary mt-2 ">Send</button>
+            <button onClick={onResetForm} className="btn btn-primary mt-2  ">
+              Reset
+            </button>
+          </div>
         </div>
       </form>
 

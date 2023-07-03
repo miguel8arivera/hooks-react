@@ -42,11 +42,16 @@ const useForm = (initalFormState = {}) => {
     });
   };
 
+  const onResetForm = () => {
+    setFormState(initialFormState);
+  };
+
   return {
     ...formState,
     formState,
     handleInputChange,
     handleSubmit,
+    onResetForm,
   };
 };
 

@@ -2,6 +2,9 @@ import { CounterApp } from './01-useState/CounterApp';
 import CounterAppWithCustomHook from './01-useState/CounterAppWithCustomHook';
 import SimpleForm from './02-useEffect/SimpleForm';
 import SimpleFormWithHook from './02-useEffect/SimpleFormWithHook';
+import MultipleCoostomHooks from './03-examples/MultipleCoostomHooks';
+import FocusInput from './04-useRef/FocusInput';
+import Posts from './05-useLayoutEffect/Posts';
 
 export function HooksApps() {
   return (
@@ -15,6 +18,12 @@ export function HooksApps() {
       <SimpleForm />
       <hr />
       <SimpleFormWithHook />
+      <hr />
+      <MultipleCoostomHooks />
+      <hr />
+      <FocusInput />
+      <hr />
+      <Posts />
     </>
   );
 }
