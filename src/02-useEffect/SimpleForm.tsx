@@ -48,7 +48,19 @@ function SimpleForm() {
   }, [email]);
   return (
     <div className="container">
-      <h3>Form Simple</h3>
+      <h3>Form Simple (useEffect and useState)</h3>
+      <h5>Descripcion:</h5>
+      <p>
+        useEffect es para disparar efectos secundarios... por ejemplo, una
+        variable cambia... quieres cancelar una subscripción, quieres crear un
+        listener... eso lo puedes hacer con un useEffect y un return que se va a
+        ejecutar cuando el componente se desmonte o cuando se vuelva a ejecutar
+        el useEffect (si le pasas un array vacío) o cuando cambie la variable
+        que le pasas en el array de dependencias (si le pasas una variable en el
+        array de dependencias) o cuando cambie el estado del componente (si no
+        le pasas nada en el array de dependencias) o cuando cambie el estado del
+        componente (si no le pasas nada en el array de dependencias)
+      </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label className="form-check-label" htmlFor="name">

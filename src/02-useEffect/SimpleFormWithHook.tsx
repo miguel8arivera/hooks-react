@@ -17,7 +17,7 @@ function SimpleFormWithHook() {
 
   return (
     <div className="container">
-      <h3>Form Simple</h3>
+      <h3>Form Simple (useEffect + useState and Coostom hooks)</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label className="form-check-label" htmlFor="name1">

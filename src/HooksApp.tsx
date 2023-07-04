@@ -5,6 +5,10 @@ import SimpleFormWithHook from './02-useEffect/SimpleFormWithHook';
 import MultipleCoostomHooks from './03-examples/MultipleCoostomHooks';
 import FocusInput from './04-useRef/FocusInput';
 import Posts from './05-useLayoutEffect/Posts';
+import Memorize from './06-useMemo/Memorize';
+import MemoHook from './06-useMemo/MemoHook';
+import CallbackHook from './06-useMemo/CallbackHook';
+import { Padre } from './07-tarea-memo/Padre';
 
 export function HooksApps() {
   return (
@@ -24,6 +28,14 @@ export function HooksApps() {
       <FocusInput />
       <hr />
       <Posts />
+      <hr />
+      <Memorize />
+      <hr />
+      <MemoHook />
+      <hr />
+      <CallbackHook />
+      <hr />
+      <Padre />
     </>
   );
 }

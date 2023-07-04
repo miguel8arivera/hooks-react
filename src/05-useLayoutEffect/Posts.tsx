@@ -14,7 +14,21 @@ function Posts() {
   // console.log({ data, isLoading, isError });
   return (
     <div className="container">
-      <h3>Multiple Cootom Hooks</h3>
+      <h3>Multiple Cootom Hooks (useLayoutEffect )</h3>
+      <h5>Descripcion:</h5>
+      <p>
+        El useLayoutEffect es similar al useEffect, pero se ejecuta antes de que
+        se pinte el componente, es decir, antes de que se pinte el html, y el
+        useEffect se ejecuta después de que se pinte el html (después de que se
+        pinte el componente) y antes de que se pinte el siguiente componente (el
+        que se pinte después del componente que tiene el useEffect) y el
+        useLayoutEffect se ejecuta antes de que se pinte el componente y antes
+        de que se pinte el siguiente componente (el que se pinte después del
+        componente que tiene el useLayoutEffect) y antes de que se pinte el
+        html. El useLayoutEffect es síncrono y el useEffect es asíncrono. El
+        useLayoutEffect se ejecuta antes de que se pinte el html, y el useEffect
+        se ejecuta después de que se pinte el html.
+      </p>
       {isLoading ? (
         <IsLoading />
       ) : isError ? (

@@ -11,7 +11,9 @@ function MultipleCoostomHooks() {
   // console.log({ data, isLoading, isError });
   return (
     <div className="container">
-      <h3>Multiple Cootom Hooks</h3>
+      <h3>
+        Multiple Cootom Hooks (useFetch + useCounter and useState + useEffect)
+      </h3>
       {isLoading ? (
         <IsLoading />
       ) : isError ? (
