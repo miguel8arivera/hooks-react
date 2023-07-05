@@ -4,6 +4,11 @@ type Todo = {
   done: boolean;
 };
 
+type Action = {
+  type: string;
+  payload: Todo;
+};
+
 export const initialState: Todo[] = [
   {
     id: crypto.randomUUID(),
@@ -22,6 +27,11 @@ export const initialState: Todo[] = [
   },
 ];
 
-export const todoReducer = (state = initialState, action = {}) => {
-  return state;
+export const todoReducer = (state = initialState, action: Action) => {
+  switch (action.type) {
+    case '[TODO] add Todo':
+      return [...state, action.payload];
+    default:
+      return initialState;
+  }
 };
