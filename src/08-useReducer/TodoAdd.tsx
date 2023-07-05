@@ -1,4 +1,5 @@
 import { useForm } from '../hooks';
+import { Todo } from '../types';
 
 type TodoAddProps = {
   onNewTodo: (todo: Todo) => void;
@@ -34,6 +35,7 @@ export function TodoAdd({ onNewTodo }: TodoAddProps) {
         type="text"
         className="form-control"
         value={task}
+        placeholder="que tengo que hacer?"
       />
       <button className="btn btn-outline-primary m-2">Agregar</button>
     </form>

@@ -1,12 +1,15 @@
 // Intro Reducer - Reducer con un solo estado
-//1.crear el estado inicial
 
-type Todo = {
+import { Todo } from '../types';
+// crear el tipo de dato que va a recibir el reducer
+
+/* type Todo = {
   id: string;
   task: string;
   done: boolean;
-};
+}; */
 
+//1.crear el estado inicial
 const initialState: Todo[] = [
   {
     id: crypto.randomUUID(),

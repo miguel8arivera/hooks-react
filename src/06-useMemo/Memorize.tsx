@@ -9,7 +9,7 @@ export default function Memorize() {
 
   return (
     <div className="container">
-      <h3>Memo</h3>
+      <h3>Memo == metodo de react(React.memo)</h3>
       <h5>descripcion:</h5>
       <p>
         un memo es para memorizar un valor, digamos que tienes un proceso pesado
