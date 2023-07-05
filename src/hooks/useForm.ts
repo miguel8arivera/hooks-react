@@ -4,12 +4,14 @@ interface SimpleFormState {
   name: string;
   email: string;
   password: string;
+  task: string;
 }
 
 const initialFormState: SimpleFormState = {
   name: '',
   email: '',
   password: '',
+  task: '',
 };
 
 const useForm = (initalFormState = {}) => {
@@ -39,6 +41,7 @@ const useForm = (initalFormState = {}) => {
       name: '',
       email: '',
       password: '',
+      task: '',
     });
   };
 

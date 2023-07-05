@@ -6,7 +6,7 @@ type HijoProps = {
 };
 
 export const Hijo = ({ numero, incrementar }: HijoProps) => {
-  console.log('  Me volví a generar :(  ');
+  // console.log('  Me volví a generar :(  ');
 
   return (
     <button className="btn btn-primary m-2" onClick={() => incrementar(numero)}>

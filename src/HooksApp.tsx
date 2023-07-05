@@ -9,6 +9,7 @@ import Memorize from './06-useMemo/Memorize';
 import MemoHook from './06-useMemo/MemoHook';
 import CallbackHook from './06-useMemo/CallbackHook';
 import { Padre } from './07-tarea-memo/Padre';
+import { TodoApp } from './08-useReducer/TodoApp';
 
 export function HooksApps() {
   return (
@@ -36,6 +37,8 @@ export function HooksApps() {
       <CallbackHook />
       <hr />
       <Padre />
+      <hr />
+      <TodoApp />
     </>
   );
 }

@@ -15,7 +15,7 @@ export const Padre = () => {
 
   return (
     <div className="container">
-      <h1>Padre</h1>
+      <h3>Fin de la seccion de los hooks basicos</h3>
       <p> Total: {valor} </p>
 
       <hr />
