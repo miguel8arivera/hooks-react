@@ -1,4 +1,5 @@
 import { useForm } from '../hooks';
+import { Todo } from '../types';
 
 type TodoAddProps = {
   onNewTodo: (todo: Todo) => void;
