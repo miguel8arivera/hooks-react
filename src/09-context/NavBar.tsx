@@ -1,32 +1,51 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const NavBar = () => {
   return (
     <>
-      <Link
-        to="/"
-        className="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover m-2"
-      >
-        Home
-      </Link>
-      <Link
-        to="/about"
-        className="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover m-2"
-      >
-        About
-      </Link>
-      <Link
-        to="/login"
-        className="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover m-2"
-      >
-        Login
-      </Link>
-      <Link
-        to="/contact"
-        className="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover m-2"
-      >
-        Contacto
-      </Link>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded-3">
+        <Link to="/" className="navbar-brand">
+          useContext
+        </Link>
+
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <NavLink
+              className={({ isActive }) =>
+                `nav-link ${isActive ? 'active' : ''}`
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `nav-link ${isActive ? 'active' : ''}`
+              }
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `nav-link ${isActive ? 'active' : ''}`
+              }
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                `nav-link ${isActive ? 'active' : ''}`
+              }
+              to="/login"
+            >
+              Login
+            </NavLink>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 };

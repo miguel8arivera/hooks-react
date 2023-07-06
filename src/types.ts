@@ -4,7 +4,13 @@ export type Todo = {
   done: boolean;
 };
 
-export const initialState: Todo[] = [];
+export const initialState: Todo[] = [
+  {
+    id: '1',
+    task: 'Learn React',
+    done: false,
+  },
+];
 export interface AddTodoAction {
   type: '[TODO] add Todo';
   payload: {

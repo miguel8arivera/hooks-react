@@ -11,6 +11,8 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import { ErrorPage } from './09-context/ErrorPage';
+import { UserProvider } from './09-context/context/userProvider';
+import { HooksApps } from './HooksApp';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>
 );
