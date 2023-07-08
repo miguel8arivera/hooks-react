@@ -14,13 +14,15 @@ const initialFormState: SimpleFormState = {
   task: '',
 };
 
-const useForm = (initalFormState = {}) => {
-  const [formState, setFormState] = useState<SimpleFormState>(initialFormState);
+const useForm = (initialForm = {}) => {
+  const [formState, setFormState] = useState<SimpleFormState>(initialForm); // buscar la solucion del error
 
   const { name, email, password } = formState;
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleInputChange = ({
+    target,
+  }: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = target;
 
     setFormState({
       ...formState,
