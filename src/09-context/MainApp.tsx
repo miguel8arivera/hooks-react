@@ -3,6 +3,7 @@ import { NavBar } from './NavBar';
 import { useContext } from 'react';
 import { UserContext } from './context/userContext';
 
+// 3. usamos el useContext para obtener el user del contexto y lo mostramos en el componente.
 export const MainApp = () => {
   const { user } = useContext(UserContext);
   return (
